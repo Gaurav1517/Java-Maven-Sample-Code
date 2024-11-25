@@ -5,7 +5,7 @@ FROM openjdk:8-jdk-alpine
 WORKDIR /app
 
 # Copy the JAR file from the target directory to the container
-COPY ./target/*.jar app.jar
+COPY app/target/*.jar app.jar
 
 # Expose a default application port (adjust if necessary)
 EXPOSE 8080
