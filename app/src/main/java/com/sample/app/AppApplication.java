@@ -12,21 +12,19 @@
 //     }
 // }
 
+
+
+
 package com.sample.app;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@Controller
-public class HomeController {
+@SpringBootApplication
+public class AppApplication {
 
-    @GetMapping("/")
-    @ResponseBody
-    public String home() {
-        return "Welcome to the Home Page!";
+    public static void main(String[] args) {
+        System.out.println("Hello"); // Print "Hello" to the console
+        SpringApplication.run(AppApplication.class, args);
     }
 }
-
-
-
